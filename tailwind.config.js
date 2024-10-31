@@ -30,8 +30,10 @@ module.exports = {
           800: 'hsl(248, 33%, 25%)',
           900: 'hsl(248, 33%, 19%)', //default
         },
-      }
-
+      },
+      letterSpacing: {
+        'widest-plus': '0.7em', // Ajuste o valor conforme desejado
+      },
     },
   },
   plugins: [],
