@@ -31,11 +31,22 @@ module.exports = {
           900: 'hsl(248, 33%, 19%)', //default
         },
       },
+
+      transitionDuration: {
+        DEFAULT: '200ms', // Define a duração padrão para 250ms
+      },
+
+      transitionTimingFunction: {
+        DEFAULT: 'ease-in-out', // Define o easing padrão igual ao CSS
+      },
+
       letterSpacing: {
-        'widest-plus': '0.7em', // Ajuste o valor conforme desejado
+        'widest-plus3': '0.7em',
+        'widest-plus2': '0.4em',
+        'widest-plus': '0.2em',
       },
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 }
 

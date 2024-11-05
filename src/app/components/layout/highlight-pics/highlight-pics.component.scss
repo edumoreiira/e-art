@@ -1,0 +1,10 @@
+.highlight-pic {
+    &::after {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        content: '';
+        pointer-events: none;
+        background: linear-gradient(to top, hsla(0, 0%, 0%, 0.5), transparent 30%);
+    }
+}
