@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { HighlightPicsComponent } from "../../components/layout/highlight-pics/highlight-pics.component";
 import { HighlightPictures } from '../../models/highlight-pictures.interface';
+import { ButtonComponent } from "../../components/base/button/button.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HighlightPicsComponent],
+  imports: [HighlightPicsComponent, ButtonComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

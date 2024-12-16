@@ -1,5 +1,4 @@
-<section class="container-custom">
-    <app-highlight-pics
-    [pictures]="highlightPictures"
-    />
+<section class="container-custom flex flex-col gap-6 items-center">
+    <app-highlight-pics [pictures]="highlightPictures" class="self-stretch"/>
+    <button custom [group]="'highlight'">Visualizar Mais</button>
 </section>

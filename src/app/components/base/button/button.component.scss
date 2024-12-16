@@ -1,0 +1,17 @@
+:host {
+    
+    &.highlight {
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: .3rem;
+        font-weight: 300;
+        padding: .2rem 2.5rem;
+        background: linear-gradient(to left, hsl(var(--color-primary)) 50%, hsl(var(--color-secondary)) 50%);
+        background-size: 203%;
+        background-position-x: 5%;
+        transition: background 250ms ease-in-out;
+        &:hover {
+            background-position-x: 99%;
+        }
+    }
+}
