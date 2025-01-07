@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { HighlightPicsComponent } from "../../components/layout/highlight-pics/highlight-pics.component";
 import { HighlightPictures } from '../../models/highlight-pictures.interface';
 import { ButtonComponent } from "../../components/base/button/button.component";
+import { ImageTextBlockComponent } from "../../components/layout/image-text-block/image-text-block.component";
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HighlightPicsComponent, ButtonComponent],
+  imports: [HighlightPicsComponent, ButtonComponent, ImageTextBlockComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })

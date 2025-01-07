@@ -1,0 +1,10 @@
+.img-container {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        background-color: hsl(var(--color-primary));
+        width: 5px;
+        height: 100%;
+    }
+}
