@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-art</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/assets/images/favicon-e-art.png">
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="banner">
+            <img src="./assets/images/banner da galeria.jpg">
+            <div class="banner-text">
+                <h2 class="banner-text-bold">E-ART</h2>
+                <h2>SUA GALERIA DE ARTE DIGITAL</h2>
+            </div>
+        </div>
+        <nav>
+            <div class="nav-line"></div>
+            <section class="navbar">
+                <div class="logo">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <img src="./assets/images/e-art/e-art.png" alt="e-art logotipo">
+                </div>
+                <button id="menu-btn" data-visible="false">
+                    <span class="menu-icon"></span>
+                </button>
+                <div class="nav-items-wrapper" data-visible="false">
+                    <div class="nav-line2" data-visible="false"></div>
+                    <ul>
+                        <li><a class="txtH" href="#">HOME</a></li>
+                        <li><a class="txtH" href="#">GALERIA</a></li>
+                        <li><a class="txtH" href="#">NFT</a></li>
+                        <li>
+                            <a class="nav-login-btn txtH">LOGIN</a>
+                            <a href="#" class="nav-register-btn btnH">REGISTRE-SE</a>
+                        </li>
+                        <li><input class="inputF" type="text" placeholder="Pesquisar obras"></li>
+                    </ul>
+                </div>
+            </section>
+        </nav>
+        <section id="sign-in" data-visible="false">
+            <div class="sign-in-c" data-form="login">
+                <img src="./assets/images/icone/icone1.png" alt="">
+                <span class="close-modal-btn"></span>
+                <span class="returnLogin-btn btnH"></span>
+                <div class="login-form">
+                    <form class="login">
+                        
+                        <input class="inputF" type="email" placeholder="E-mail cadastrado" name="username" required>
+                        <input class="inputF" type="password" placeholder="Senha" name="password" required>
+                        <span class="forgot-passowrd">Esqueceu <span class="txtH account-recovery-btn">sua conta?</span></span>
+                        <button class="signin-btn btnH" type="submit">Entrar</button>
+                        
+                    </form>
+                        <span class="create-account-btn txtH">Crie uma conta</span>
+                </div>
+
+                <div class="register-form">
+                    <form class="register">
+                        <div class="username">
+                            <label for="username">Nome de usuário:</label>
+                            <input type="text" placeholder="Nome de usuário" name="username" required>
+                        </div>
+                        <div class="name">
+                            <label for="name">Seu nome:</label>
+                            <input type="text" placeholder="Nome e Sobrenome" name="name" required>
+                        </div>
+                        <div class="birth-date">
+                            <label for="birth-date">Data de nascimento:</label>
+                            <input type="text" placeholder="dd/mm/aaaa" onfocus='(this.type="date")' onblur='(this.type="text")' name="birth-date" required>
+                        </div>
+                        <div class="register-email">
+                            <label for="email">Endereço de e-mail:</label>
+                            <input type="email" placeholder="E-mail" name="email" required>
+                        </div>
+                        <div class="register-password">
+                            <label for="password">Sua senha:</label>
+                            <input type="password" placeholder="Senha" name="password" required>
+                        </div>
+                        <div class="register-confirm-password">
+                            <label for="confirm-password">Confirmar senha:</label>
+                            <input type="password" placeholder="Senha" name="confirm-password" required>
+                        </div>
+                        <button class="register-btn btnH" type="submit">Registrar-se</button>
+                        
+                    </form>
+                        <span class="login-now txtH">Já tenho uma conta</span>
+                </div>
+
+                <div class="account-recovery-form">
+                    <form class="account-recovery">
+                        <h2>Recuperar conta</h2>
+                        <h3>Enviaremos uma mensagem com instruções de recuperação de conta para o e-mail cadastrado.</h2>
+                        <input class="inputF" type="email" placeholder="E-mail cadastrado" name="email" required>
+                        <button class="signin-btn btnH" type="submit">Enviar</button>
+                        
+                    </form>
+                </div>
+
+            </div>
+            <div class="background-login"></div>
+        </section>
+
+        <section class="highlight">
+            <div class="highlight-c">
+                <h1>DESTAQUES DA SEMANA</h1>
+                <div id="slider">
+                    <div class="left-bkg">
+                        <button type="button" class="slide-button slide-button-previous"></button>
+                    </div>
+                    <div class="right-bkg">
+                        <button type="button" class="slide-button slide-button-next"></button>
+                    </div>
+                    <div id="highlight-pics" class="layout3">
+                        <div class="hpics hp1" data-index="0">
+                            <img class="img-1-standard" src="./assets/images/imagens/pagina 1 carrossel/img1.png">
+                            <div class="hpics-txt">
+                                <p class="hpics-txt-bold">Lorem, ipsum.</p>
+                                <p>Lorem ipsum dolor sit.</p>
+                            </div>
+                        </div>
+                        <div class="hpics hp2" data-index="1">
+                            <img class="img-2-standard" src="./assets/images/imagens/pagina 1 carrossel/img2.png">
+                            <div class="hpics-txt">
+                                <p class="hpics-txt-bold">Lorem, ipsum dolor.</p>
+                                <p>Lorem, ipsum.</p>
+                            </div>
+                        </div>
+                        <div class="hpics hp3" data-index="2">
+                            <img class="img-3-standard" src="./assets/images/imagens/pagina 1 carrossel/img3.png">
+                            <div class="hpics-txt">
+                                <p class="hpics-txt-bold">Lorem, ipsum.</p>
+                                <p>Lorem.</p>
+                            </div>
+                        </div>
+                        <div class="hpics hp4" data-index="3">
+                            <img class="img-4-standard" src="./assets/images/imagens/pagina 1 carrossel/img4.png">
+                            <div class="hpics-txt">
+                                <p class="hpics-txt-bold">Lorem, ipsum dolor.</p>
+                                <p>Lorem.</p>
+                            </div>
+                        </div>
+                        <div class="hpics hp5" data-index="4">
+                            <img class="img-5-standard" src="./assets/images/imagens/pagina 1 carrossel/img5.png">
+                            <div class="hpics-txt">
+                                <p class="hpics-txt-bold">Lorem</p>
+                                <p>Lorem, ipsum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider-buttons">
+
+                    </div>
+                </div>
+                <div class="highlight-btn">
+                    <input class="btn00" type="button" value="VISUALIZAR MAIS">
+                </div>
+            </div>
+        </section>
+        
+        <section class="NFT">
+            
+            <div class="NFT-c">
+                <div class="NFT-header">
+                    <span>Um pouco de história...</span>
+                </div>
+
+                <div class="NFT-textbox">
+                    <h2>Você sabe o que é um <b>NFT?</b></h2>
+                    <h3><div class="spacing"></div>É uma sigla <b>“non-fungible token”,</b> traduzido para o português: <b class="b-strong">token não-fungivel</b>. Em outras palavras um token no universo das criptomoedas é a representação de um ativo como dinheiro, propriedade ou obra de arte registrada em uma <b>blockchain</b>. Essa forma de negócio é recente, conquistou olhares no ano de <b>2014</b>, através da obra de arte de <b class="b-strong">Kevin McCoy, Quantum</b>. De lá pra cá os NFT'S se tornaram verdadeiras tendências de colecionáveis no mercado de cripto! E é por essa razão que apresentaremos alguns artistas nesse modelo de <b>arte digital!</b></h3>
+                </div>
+
+    
+                <div class="NFT-img-c">
+                    <div class="NFT-img">
+                        <img src="./assets/images/primeira nft.png">
+                        <div class="NFT-img-text">
+                            <p>Quantum. A primeira NFT</p>
+                            <p class="sub">Arte digital de Kevin Mccoy</p>
+                        </div>                     
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mini-gallery">
+            <div class="mini-gallery-c">
+                <div class="mini-gallery-title">
+                    <h1>GALERIA</h1>
+                    <h1 class="subterranea">SUBTERRÂNE<span>A</span></h1>
+                </div>
+                <div class="mini-gallery-grid">
+                    <div class="card1 card-wide"
+                    style="background-image: url('./assets/images/imagens/pagina 3 galeria/gallery1.png')"></div>
+                    <div class="card2"
+                    style="background-image: url('./assets/images/imagens/pagina 3 galeria/gallery2.png')"></div>
+                    <div class="card3"
+                    style="background-image: url('./assets/images/imagens/pagina 3 galeria/gallery3.png')"></div>
+                    <div class="card4 card-big"
+                    style="background-image: url('./assets/images/imagens/pagina 3 galeria/gallery4.png')"></div>
+                    <div class="card5 card-tall"
+                    style="background-image: url('./assets/images/imagens/pagina 3 galeria/gallery5.png')"></div>
+                    <div class="card6"
+                    style="background-image: url('./assets/images/imagens/pagina 3 galeria/gallery6.png')"></div>
+                    <div class="card7 card-big"
+                    style="background-image: url('./assets/images/imagens/pagina 3 galeria/gallery7.png')"></div>
+                    <div class="card8"
+                    style="background-image: url('./assets/images/imagens/pagina 3 galeria/gallery8.png')"></div>
+                    <div class="card9 card-wide"
+                    style="background-image: url('./assets/images/imagens/pagina 3 galeria/gallery9.png')"></div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-info1">
+                <span><a href="">Contato</a></span>
+                <span><a href="">Sobre Nós</a></span>
+            </div>
+            <div class="footer-info2">
+                <span>2024 © e-art — Todos os direitos reservados.</span>
+            </div>
+        </footer>
+
+
+
+
+
+    </div>
+</body>
+<script src="assets\js\javascript.js"></script>
+
+</html>
